@@ -27,6 +27,9 @@
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
     <sonar.language>java</sonar.language>
+    <sonar.projectKey>Shopping:my-project</sonar.projectKey>
+    <sonar.host.url>http://192.168.186.128:9090/</sonar.host.url>
+    <sonar.login>9196afe912810a15fa847dff14482942a3bcd71f</sonar.login>
     </properties>
 
     <dependencies>
@@ -146,24 +149,8 @@
     </executions>
 </plugin>
         </plugins>
-    </build>
 
-         <distributionManagement>
-    <repository>
-      <id>maven-releases</id>
-      <name>maven-releases</name>
-      <url>http://3.108.254.192:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <name>maven-snapshots</name>
-      <url>http://3.108.254.192:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-</distributionManagement>
-
-          <build>
-        <plugins>
-            <plugin>
+              <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.9.1.2184</version>
@@ -178,11 +165,17 @@
         </plugins>
     </build>
 
-    <properties>
-        <sonar.projectKey>Shopping:my-project</sonar.projectKey>
-        <sonar.host.url>http://192.168.186.128:9090/</sonar.host.url>
-        <sonar.login>9196afe912810a15fa847dff14482942a3bcd71f</sonar.login>
-    </properties>
-
+         <distributionManagement>
+    <repository>
+      <id>maven-releases</id>
+      <name>maven-releases</name>
+      <url>http://3.108.254.192:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <name>maven-snapshots</name>
+      <url>http://3.108.254.192:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
