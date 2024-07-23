@@ -30,6 +30,7 @@
         <sonar.projectKey>Shopping:my-project</sonar.projectKey>
         <sonar.host.url>http://192.168.186.128:9090/</sonar.host.url>
         <sonar.login>9196afe912810a15fa847dff14482942a3bcd71f</sonar.login>
+        <sonar.password>12345</sonar.password>
     </properties>
 
     <dependencies>
